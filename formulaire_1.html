@@ -1,0 +1,160 @@
+<DOCTYPE html>
+    <html lang="fr">
+    
+        <head>
+            <!--Caractères compris et adaptabilité de l'affichage-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="witdh=device-witdh, initial-scale=1.0">
+            <!--intitulé de la page web-->
+            <title> Formulaire de Keyla KAMARA </title>
+            <!--pour avoir les modifs en css-->
+            <link rel="stylesheet" href="formulaire_1.css" >
+          
+        </head>
+
+        <!--corps du formulaire (fond + contenu) -->
+        <body>
+
+            <!--titre de la page-->
+            <h1>Editeur de script</h1>
+
+            <!--Encadré du formulaire-->
+            <form method="post" action="demande.php">
+
+                <!--En tête de la CaseFormulaire--> 
+                <h3>Nous soumettre votre projet</h3>
+
+                <!--définition du formulaire-->
+                <div class="CaseFormulaire">
+                    <!--Coté Gauche-->
+                    <div class="gauche">
+
+                        <div class="CaseGriseFoncée"> <!--Case gris foncé-->
+
+                            <div class="CaseGrisClair"><!--Case gris clair-->
+
+                                <div class="Minibox">  <!--Minibox, plus clair, cadre plus petit-->
+                                    <!--Nom-->
+                                    <!--label: texte avec for="name" qui fait le lien au input via le id="name"-->
+                                    <label for="name">Nom :</label>
+                                    <input type="text" id="name">
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="CaseGrisClair">
+
+                                <div class="Minibox">
+                                    <!--Prénom-->
+                                    <label for="prénom">Prénom :</label>
+                                    <input type="text" id="prénom">
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="CaseGrisClair">
+                                <div class="Minibox">
+                                    <!--email-->
+                                    <label for="email">E-mail :</label>
+                                    <input type="email" id="email">
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+
+                        <div class="CaseGriseFoncée">
+                            <div class="CaseGrisClair">
+                                <!--légende pour échéance avec bouton type radio-->
+                                <p>Echéance</p>
+                                <fieldset> <!--Cadre pour la liste-->
+                                <ul> <!--liste non ordonée-->
+                                    <input type="radio" name="choix1"> <!--bouton 1-->
+                                    <label for="choix1"> sous 3 mois</label> <!--choix1-->
+                                    <br>
+                                    <input type="radio" name="choix2"><!--bouton2-->
+                                    <label for="choix2"> 3 à 6 mois </label> <!--choix2-->
+                                    <br>
+                                    <input type="radio" name="choix3"> <!--bouton3-->
+                                    <label for="choix3">plus de 6 mois</label> <!--choix3-->
+                                </ul>
+                                </fieldset>
+                            </div>
+                        
+    
+                            <div class="CaseGrisClair">
+
+                                <div class="Minibox">
+                                    <!--Nature de la demande-->
+                                    <label for="demande">Nature de la demande</label><br>
+                                </div>
+
+                                <div class="Minibox">
+                                    <input type="checkbox" name="investissement">
+                                    <label for="investissement"> Investissement</label><br>
+                                </div>
+
+                                <div class="Minibox">
+                                    <input type="checkbox" name="prestation">
+                                    <label for="prestation"> Prestation de conseil</label>
+                                </div>
+                                
+                                <div class="Minibox">
+                                    <!--Délais Réponse-->
+                                    <label for="délai">Réponse souhaitée sous:</label>
+                                    <!--select: création de la boite de sélection avec options-->
+                                    <select id="délai">
+                                        <option value="">-- Choisissez une option--</option>   <!--Diverses options-->
+                                        <option value="2j">2 jours</option>
+                                        <option value="4j">4 jours</option>
+                                        <option value="5j">5 jours</option>
+                                        <option value="8j">8 jours</option>
+                                        <option value="10j">10 jours</option>
+                                    </select>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Coté Droit-->
+                    <div class="droite">
+                        <div class="CaseGriseFoncée">
+                            <div class="CaseGrisClair">
+
+                                <div class="Minibox">
+                                    <!--Intitulé du projet-->
+                                    <label for="intitulé">Intitulé du projet:</label>
+                                    <input type="text" id="intitulé">
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="CaseGrisClair">
+
+                                <div class="Minibox">
+                                    <label for="description">Description du projet :</label><br>
+                               </div>
+
+                               <div class="Minibox">
+                                <textarea id="description" name="description" rows="17" cols="60"> </textarea>
+                               </div>
+
+                            </div>
+                            <br>
+                        </div>
+
+                        <!--bouton envoyer et effacer-->
+                        <input type=submit value="Envoyer">
+                        <input type=reset value="Réinitialiser">
+                    </div>
+
+                </div>
+                
+            </form>
+
+        </body>
+
+
+    </html>
+</DOCTYPE>
